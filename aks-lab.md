@@ -1,3 +1,11 @@
+## Create new service principal
+
+```bash
+az ad sp create-for-rbac --role Contributor
+```
+
+
+
 ## Check the expiration date of your service principal
 
 ```bash
