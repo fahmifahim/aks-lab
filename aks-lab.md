@@ -32,3 +32,14 @@ az ad sp credential list --id $SP_ID
         }
     ]
 ```
+
+
+
+### Node auto scaling
+
+Check node autoscaling enabled/disabled
+
+```bash
+az aks nodepool show --cluster-name [AKS-CLUSTERNAME] --name [AKS-NODEPOOL-NAME] --resource-group [AKS-RG-NAME] | grep enableAutoScaling
+    "enableAutoScaling": false,
+```
